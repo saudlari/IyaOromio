@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "caramellatte";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(0.2509 0.0626 254.93); /* Color del fondo */
+  --color-base-200: oklch(0.9632 0.0152 83.05); /* Color del fondo secundario */
+  --color-base-300: oklch(0.709 0.084 176.7 / 0.5); /* Color del borde */
+  --color-base-content: oklch(0.9765 0.0039 247.858);
+  
+  /* COLORES PRINCIPALES - Cambia estos valores para modificar los colores de los botones */
+  --color-primary: oklch(0.7665 0.1387 91.06);              /* Color del botón primary */
+  --color-primary-content: oklch(26% 0.079 36.259);         /* Color del texto en botón primary */
+  
+  --color-secondary: oklch(0.7036 0.0814 186.26);          /* Color del botón secondary */
+  --color-secondary-content: oklch(27% 0.046 192.524);      /* Color del texto en botón secondary */
+  
+  --color-accent: oklch(0.7036 0.0814 186.26);
+  --color-accent-content: oklch(29% 0.136 325.661);
+  --color-neutral: oklch(0.4607 0.0611 264.88);
+  --color-neutral-content: oklch(98% 0 0);
+  
+  /* COLORES DE ESTADO */
+  --color-info: oklch(68% 0.169 237.323);                  /* Color del botón info */
+  --color-info-content: oklch(97% 0.013 236.62);
+  
+  --color-success: oklch(0.7036 0.0814 186.26);            /* Color del botón success */
+  --color-success-content: oklch(98% 0.031 120.757);
+  
+  --color-warning: oklch(0.8663 0.1867 99.58);             /* Color del botón warning */
+  --color-warning-content: oklch(98% 0.022 95.277);
+  
+  --color-error: oklch(59% 0.249 0.584);                   /* Color del botón error */
+  --color-error-content: oklch(97% 0.014 343.198);
+}
