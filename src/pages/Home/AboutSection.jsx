@@ -3,6 +3,7 @@ export default function AboutSection() {
     return (
         <div>
             <div className="hero min-h-screen">
+                
                 <div className="hero-content flex-col lg:flex-row lg:items-stretch gap-8">
                     <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5EppufXWmdvszk-pi6Y4uk1k7sCBWxbCOww&s"

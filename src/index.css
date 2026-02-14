@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+
 @theme {
   --font-family-sans: 'Roboto', sans-serif;
   --font-family-serif: 'Aboreto', serif;
@@ -12,44 +13,116 @@
   default: true;
   prefersdark: false;
   color-scheme: "light";
-  --color-base-100: oklch(0.2509 0.0626 254.93); /* Color del fondo */
-  --color-base-200: oklch(0.9632 0.0152 83.05); /* Color del fondo secundario */
-  --color-base-300: oklch(0.709 0.084 176.7 / 0.5); /* Color del borde */
+  
+  /* Colores de fondo */
+  --color-base-100: oklch(0.2509 0.0626 254.93);
+  --color-base-200: oklch(0.9632 0.0152 83.05);
+  --color-base-300: oklch(0.709 0.084 176.7 / 0.5);
   --color-base-content: oklch(0.9765 0.0039 247.858);
   
-  /* COLORES PRINCIPALES - Cambia estos valores para modificar los colores de los botones */
-  --color-primary: oklch(0.7665 0.1387 91.06);              /* Color del botón primary */
-  --color-primary-content: oklch(0.2509 0.0626 254.93);         /* Color del texto en botón primary */
-  
-  --color-secondary: oklch(0.5461 0.2152 262.88);          /* Color del botón secondary */
-  --color-secondary-content: oklch(0.2509 0.0626 254.93);      /* Color del texto en botón secondary */
-  
+  /* Colores principales */
+  --color-primary: oklch(0.7665 0.1387 91.06);
+  --color-primary-content: oklch(0.2509 0.0626 254.93);
+  --color-secondary: oklch(0.5461 0.2152 262.88);
+  --color-secondary-content: oklch(0.2509 0.0626 254.93);
   --color-accent: oklch(0.7036 0.0814 186.26);
   --color-accent-content: oklch(29% 0.136 325.661);
   --color-neutral: oklch(0.4607 0.0611 264.88);
   --color-neutral-content: oklch(98% 0 0);
   
-  /* COLORES DE ESTADO */
-  --color-info: oklch(68% 0.169 237.323);                  /* Color del botón info */
+  /* Colores de estado */
+  --color-info: oklch(68% 0.169 237.323);
   --color-info-content: oklch(97% 0.013 236.62);
-  
-  --color-success: oklch(0.7036 0.0814 186.26);            /* Color del botón success */
+  --color-success: oklch(0.7036 0.0814 186.26);
   --color-success-content: oklch(98% 0.031 120.757);
-  
-  --color-warning: oklch(0.8663 0.1867 99.58);             /* Color del botón warning */
+  --color-warning: oklch(0.8663 0.1867 99.58);
   --color-warning-content: oklch(98% 0.022 95.277);
-  
-  --color-error: oklch(59% 0.249 0.584);                   /* Color del botón error */
+  --color-error: oklch(59% 0.249 0.584);
   --color-error-content: oklch(97% 0.014 343.198);
+  
 }
 
-body {
-  font-family: var(--font-family-sans);
+@keyframes slideRight {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(5%);
+  }
 }
 
-/* Asegurar que el fondo cubra toda la página */
-html, body, #root {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+/* Animaciones generales */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Clases de animación */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Transiciones suaves globales */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animaciones en hover para botones y enlaces */
+button:hover,
+a:hover {
+  transform: translateY(-2px);
+}
+
+button:active,
+a:active {
+  transform: translateY(0);
+}
+
+/* Animación suave para el header */
+header {
+  transition: all 0.3s ease;
+}
+
+/* Animación para elementos que aparecen al hacer scroll */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

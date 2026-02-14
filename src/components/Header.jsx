@@ -3,7 +3,7 @@ import Button from './Button'
 
 export default function Header() {
   return (
-        <header className="relative z-50 bg-base-100">
+        <header className="sticky top-0 z-50 bg-base-100 backdrop-blur-sm">
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">
