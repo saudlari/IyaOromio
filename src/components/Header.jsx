@@ -2,7 +2,7 @@ import Button from './Button'
 
 export default function Header() {
     return (
-        <header>
+        <header className="relative z-50 bg-base-100">
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="navbar-start">
                     <div className="dropdown">

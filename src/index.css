@@ -22,6 +22,7 @@
   --color-primary-content: oklch(0.2509 0.0626 254.93);         /* Color del texto en botón primary */
   
   --color-secondary: oklch(0.5461 0.2152 262.88);          /* Color del botón secondary */
+  --color-secondary-content: oklch(0.2509 0.0626 254.93);      /* Color del texto en botón secondary */
   
   --color-accent: oklch(0.7036 0.0814 186.26);
   --color-accent-content: oklch(29% 0.136 325.661);
