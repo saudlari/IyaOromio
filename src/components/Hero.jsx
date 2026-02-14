@@ -12,8 +12,8 @@ export default function Hero() {
                 <div className="hero-overlay"></div>
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">Iya Oromio</h1>
-                        <p className="mb-5">
+                        <h1 className="mb-5 text-5xl font-bold font-display">Iyá <span className="text-secondary">Oromiô</span></h1>
+                        <p className="mb-5 text-xl text-primary">
                            Mulheres de Axé
                         </p>
                         <Button variant="primary" asLink>

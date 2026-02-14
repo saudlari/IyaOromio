@@ -24,7 +24,7 @@ export default function Header() {
                         </ul>
                     </div>
                     <Button variant="ghost" className="text-xl" asLink>
-                        Iya Oromio
+                        <span className="font-display">Iyá Oromiô</span>
                     </Button>
                 </div>
                 <div className="navbar-center hidden lg:flex">
