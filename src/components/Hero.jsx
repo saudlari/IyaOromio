@@ -1,13 +1,11 @@
-import Button from './Button'
+import ExploreMapButton from '../buttons/ExploreMapButton'
+import LearnMoreButton from '../buttons/LearnMoreButton'
+
 export default function Hero() {
     return (
         <div>
             <div
                 className="hero min-h-screen"
-                style={{
-                    backgroundImage:
-                        "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
-                }}
             >
                 <div className="hero-overlay"></div>
                 <div className="hero-content text-neutral-content text-center">
@@ -16,9 +14,8 @@ export default function Hero() {
                         <p className="mb-5 text-xl text-primary">
                            Mulheres de Axé
                         </p>
-                        <Button variant="primary" asLink>
-                            Explorar mapa
-                        </Button>
+                        <ExploreMapButton />
+                        <LearnMoreButton />
                     </div>
                 </div>
             </div>
