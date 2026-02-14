@@ -1,6 +1,6 @@
-import ExploreMapButton from '../buttons/ExploreMapButton'
-import LearnMoreButton from '../buttons/LearnMoreButton'
-import MermaidTail from '../assets/MermaidTail.webp'
+import ExploreMapButton from '../../buttons/ExploreMapButton'
+import LearnMoreButton from '../../buttons/LearnMoreButton'
+import MermaidTail from '../../assets/MermaidTail.webp'
 
 export default function Hero() {
     return (
@@ -8,7 +8,6 @@ export default function Hero() {
             <div
                 className="hero min-h-screen relative"
             >
-                <div className="hero-overlay"></div>
                 <img src={MermaidTail} alt="Mermaid Tail" className="absolute top-10 left-1/2 transform -translate-x-1/2 w-full max-w-5xl z-10" />
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
@@ -26,3 +25,4 @@ export default function Hero() {
         </div>
     )
 }
+

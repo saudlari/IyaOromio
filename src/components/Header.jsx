@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 import Button from './Button'
 
 export default function Header() {
-    return (
+  return (
         <header className="relative z-50 bg-base-100">
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="navbar-start">
@@ -12,38 +13,38 @@ export default function Header() {
                         <ul
                             tabIndex="-1"
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Inicio</a></li>
+                            <li><Link to="/">Inicio</Link></li>
                             <li>
-                                <a>Sobre o projeto</a>
+                                <Link to="/sobre">Sobre o projeto</Link>
                                 <ul className="p-2">
-                                    <li><a>O projeto</a></li>
-                                    <li><a>A equipe</a></li>
+                                    <li><Link to="/sobre">O projeto</Link></li>
+                                    <li><Link to="/equipe">A equipe</Link></li>
                                 </ul>
                             </li>
-                            <li><a>Contato</a></li>
+                            <li><Link to="/contato">Contato</Link></li>
                         </ul>
                     </div>
-                    <Button variant="ghost" className="text-xl" asLink>
+                    <Button variant="ghost" className="text-xl" asLink to="/">
                         <span className="font-display">Iyá Oromiô</span>
                     </Button>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>Inicio</a></li>
+                        <li><Link to="/">Inicio</Link></li>
                         <li>
                             <details>
                                 <summary>Sobre o projeto</summary>
                                 <ul className="p-2 bg-base-100 w-40 z-1">
-                                    <li><a>O projeto</a></li>
-                                    <li><a>A equipe</a></li>
+                                    <li><Link to="/sobre">O projeto</Link></li>
+                                    <li><Link to="/equipe">A equipe</Link></li>
                                 </ul>
                             </details>
                         </li>
-                        <li><a>Contato</a></li>
+                        <li><Link to="/contato">Contato</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Button asLink>
+                    <Button asLink to="/map">
                         Explorar mapa
                     </Button>
                 </div>
