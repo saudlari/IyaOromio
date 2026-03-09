@@ -2,11 +2,12 @@ export default function TechnicalSheet() {
   return (
     <div className="min-h-screen py-16 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto bg-base-100/80 backdrop-blur-sm rounded-lg p-8 md:p-12">
-        {/* Sección superior - CREDITOS */}
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
             <div className="h-px w-12 bg-white"></div>
-            <h2 className="text-white uppercase tracking-wider text-sm font-semibold">CREDITOS</h2>
+            <h2 className="text-white uppercase tracking-wider text-sm font-semibold">
+              CREDITOS
+            </h2>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold font-display">
             <span className="text-white">Ficha </span>
@@ -14,9 +15,7 @@ export default function TechnicalSheet() {
           </h1>
         </div>
 
-        {/* Sección de roles - Tres columnas */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-16">
-          {/* Columna 1 */}
           <div className="flex flex-col gap-6">
             <div>
               <h3 className="text-warning uppercase text-sm font-semibold tracking-wider mb-2">
@@ -32,7 +31,6 @@ export default function TechnicalSheet() {
             </div>
           </div>
 
-          {/* Columna 2 */}
           <div className="flex flex-col gap-6">
             <div>
               <h3 className="text-warning uppercase text-sm font-semibold tracking-wider mb-2">
@@ -48,7 +46,6 @@ export default function TechnicalSheet() {
             </div>
           </div>
 
-          {/* Columna 3 */}
           <div className="flex flex-col gap-6">
             <div>
               <h3 className="text-warning uppercase text-sm font-semibold tracking-wider mb-2">
@@ -65,7 +62,6 @@ export default function TechnicalSheet() {
           </div>
         </div>
 
-        {/* Sección inferior - REALIZACAO E APOIO */}
         <div className="mt-16 pt-8 border-t border-white/20">
           <h2 className="text-warning uppercase text-sm font-semibold tracking-wider text-center mb-8">
             REALIZACAO E APOIO
@@ -80,6 +76,5 @@ export default function TechnicalSheet() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

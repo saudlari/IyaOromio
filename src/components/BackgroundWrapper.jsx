@@ -10,7 +10,6 @@ export default function BackgroundWrapper({ children }) {
         width: '100%',
       }}
     >
-      {/* Background base - Background1 (más atrás) */}
       <div
         style={{
           position: 'absolute',
@@ -31,7 +30,6 @@ export default function BackgroundWrapper({ children }) {
         }}
       />
       
-      {/* Background overlay - Background2 (encima de Background1) con animación */}
       <div
         style={{
           position: 'fixed',
@@ -64,7 +62,6 @@ export default function BackgroundWrapper({ children }) {
         />
       </div>
       
-      {/* Overlay oscuro para mejorar legibilidad */}
       <div
         style={{
           position: 'fixed',
@@ -74,13 +71,12 @@ export default function BackgroundWrapper({ children }) {
           bottom: 0,
           width: '100%',
           height: 'calc(100vh - 64px)',
-          backgroundColor: 'rgba(0, 0, 0, 0.65)',
+          backgroundColor: 'rgba(0, 0, 0, 0.35)',
           zIndex: 2,
           pointerEvents: 'none',
         }}
       />
       
-      {/* Contenido */}
       <div style={{ position: 'relative', zIndex: 10 }}>
         {children}
       </div>

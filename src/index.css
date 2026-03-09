@@ -14,13 +14,11 @@
   prefersdark: false;
   color-scheme: "light";
   
-  /* Colores de fondo */
   --color-base-100: oklch(0.2509 0.0626 254.93);
   --color-base-200: oklch(0.9632 0.0152 83.05);
   --color-base-300: oklch(0.709 0.084 176.7 / 0.5);
   --color-base-content: oklch(0.9765 0.0039 247.858);
   
-  /* Colores principales */
   --color-primary: oklch(0.7665 0.1387 91.06);
   --color-primary-content: oklch(0.2509 0.0626 254.93);
   --color-secondary: oklch(0.5461 0.2152 262.88);
@@ -30,7 +28,6 @@
   --color-neutral: oklch(0.4607 0.0611 264.88);
   --color-neutral-content: oklch(98% 0 0);
   
-  /* Colores de estado */
   --color-info: oklch(68% 0.169 237.323);
   --color-info-content: oklch(97% 0.013 236.62);
   --color-success: oklch(0.7036 0.0814 186.26);
@@ -51,7 +48,6 @@
   }
 }
 
-/* Animaciones generales */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -61,6 +57,7 @@
     opacity: 1;
     transform: translateY(0);
   }
+
 }
 
 @keyframes fadeIn {
@@ -81,7 +78,6 @@
   }
 }
 
-/* Clases de animación */
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
 }
@@ -94,12 +90,10 @@
   animation: float 3s ease-in-out infinite;
 }
 
-/* Transiciones suaves globales */
 * {
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Animaciones en hover para botones y enlaces */
 button:hover,
 a:hover {
   transform: translateY(-2px);
@@ -110,12 +104,10 @@ a:active {
   transform: translateY(0);
 }
 
-/* Animación suave para el header */
 header {
   transition: all 0.3s ease;
 }
 
-/* Animación para elementos que aparecen al hacer scroll */
 .fade-in-on-scroll {
   opacity: 0;
   transform: translateY(30px);
@@ -125,4 +117,12 @@ header {
 .fade-in-on-scroll.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.leaflet-marker-icon.custom-marker-icon {
+  background: none !important;
+  border: none !important;
+}
+.custom-marker-icon .map-marker-icon {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }

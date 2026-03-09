@@ -4,13 +4,13 @@ import WomanSection from './WomanSection'
 import TechnicalSheet from './TechnicalSheet'
 
 export default function Home() {
-    return (
-        <> 
-            <Hero />
-            <AboutSection />
-            <WomanSection />    
-            <TechnicalSheet />
-        </>
-    )
+  return (
+    <>
+      <Hero />
+      <AboutSection />
+      <WomanSection />
+      <TechnicalSheet />
+    </>
+  )
 }
 

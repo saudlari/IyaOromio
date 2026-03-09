@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import Button from './Button'
+import Button from '../buttons/Button'
+import ExploreMapButton from '../buttons/ExploreMapButton'
 
 export default function Header() {
   return (
@@ -44,9 +45,7 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Button asLink to="/map">
-                        Explorar mapa
-                    </Button>
+                    <ExploreMapButton />
                 </div>
             </div>
         </header>
