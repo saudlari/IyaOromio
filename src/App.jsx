@@ -11,9 +11,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/team" element={<TeamPage />} />
-      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/sobre" element={<AboutPage />} />
+      <Route path="/equipe" element={<TeamPage />} />
+      <Route path="/contato" element={<ContactPage />} />
       <Route path="/map" element={<Map />} />
       <Route path="/women/:id" element={<WomanProfilePage />} />
     </Routes>

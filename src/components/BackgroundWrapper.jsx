@@ -10,13 +10,15 @@ export default function BackgroundWrapper({ children }) {
         width: '100%',
       }}
     >
-      <div
+      <div// Cor secondary do tema (axé)
+
         style={{
           position: 'absolute',
           top: 0,
           left: 0,
           right: 0,
           bottom: 0,
+
           width: '100%',
           height: '100%',
           minHeight: '100vh',
@@ -40,6 +42,7 @@ export default function BackgroundWrapper({ children }) {
           width: '100%',
           height: 'calc(100vh - 64px)',
           zIndex: 1,
+
           pointerEvents: 'none',
           overflow: 'hidden',
         }}
@@ -71,7 +74,7 @@ export default function BackgroundWrapper({ children }) {
           bottom: 0,
           width: '100%',
           height: 'calc(100vh - 64px)',
-          backgroundColor: 'rgba(0, 0, 0, 0.35)',
+          backgroundColor: 'rgba(0, 0, 0, 0.05)',
           zIndex: 2,
           pointerEvents: 'none',
         }}
